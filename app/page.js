@@ -5,6 +5,21 @@ import Link from 'next/link'
 
 const apis = [
   {
+    name: 'Text-to-Speech API',
+    description: 'Convert Text into Speech.',
+    link: '/api/text2speech', // changed url for the detailed api page
+  },
+  {
+    name: 'GitHub User Information API',
+    description: 'Get GitHub user information',
+    link: '/api/githubinfo', // changed url for the detailed api page
+  },
+  {
+    name: 'Translation API',
+    description: 'Translate text into any language.',
+    link: '/api/translate', // changed url for the detailed api page
+  },
+  {
     name: 'Random Joke API',
     description: 'Fetch a random joke for fun.',
     link: '/api/random-joke', // changed url for the detailed api page
@@ -31,7 +46,7 @@ export default function Home() {
             type="text"
             id="simple-search"
             className="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5"
-            placeholder="search apis"
+            placeholder="Search API's"
             required
             value={search}
             onChange={(e) => setSearch(e.target.value)}

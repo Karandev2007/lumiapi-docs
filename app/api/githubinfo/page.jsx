@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-const RandomJoke = () => {
+const GitHubUser = () => {
   return (
     <div className="max-w-7xl mx-auto p-8 bg-gray-900 text-white">
-      {/* back button to home */}
+      {/* back to home button */}
       <Link href="../">
         <button
           type="button"
@@ -15,28 +15,35 @@ const RandomJoke = () => {
       <br /><br />
 
       {/* api info header */}
-      <h2 className="text-3xl font-semibold mb-4">Random Joke API</h2>
-      <p className="text-lg mb-4">Get a random joke to spice up your app.</p>
-      
+      <h2 className="text-3xl font-semibold mb-4">GitHub User Information API</h2>
+      <p className="text-lg mb-4">fetch user data from github with just a username!</p>
+
       {/* api endpoint description */}
       <h3 className="text-xl font-medium mb-2">endpoint:</h3>
-      <pre className="bg-gray-800 p-4 rounded-lg">GET /v1/joke</pre>
+      <pre className="bg-gray-800 p-4 rounded-lg">GET /v1/github?username=username</pre>
 
+      {/* example request url */}
       <h3 className="text-xl font-medium mt-4 mb-2">example request url:</h3>
-      <pre className="bg-gray-800 p-4 rounded-lg">https://api.qeintech.in/v1/joke</pre>
+      <pre className="bg-gray-800 p-4 rounded-lg">https://api.qeintech.in/v1/github?username=Karandev2007</pre>
 
-      {/* json response format */}
+      {/* response format */}
       <h3 className="text-xl font-medium mt-4 mb-2">response (json):</h3>
       <pre className="bg-gray-800 p-4 rounded-lg">
 {`{
-  "category": "joke",
-  "joke": "I told my wife she was getting too emotional, so she threw a cup of tea at me. It was steeped in emotion",
-  "response_time": "1ms"
+  "success": true,
+  "name": "Karan",
+  "bio": "Not available",
+  "website": "Not available",
+  "location": "India",
+  "followers": 9,
+  "following": 2,
+  "avatar": "https://avatars.githubusercontent.com/u/90849102?v=4",
+  "response_time": "85ms"
 }`}
       </pre>
 
-            {/* footer section with copyright and credits */}
-            <footer className="bg-gray-900 text-white py-6">
+      {/* footer section with copyright and credits */}
+      <footer className="bg-gray-900 text-white py-6">
         <div className="container mx-auto text-center">
           <p className="text-sm">
             © 2025 Qein Tech. all rights reserved.
@@ -53,4 +60,4 @@ const RandomJoke = () => {
   )
 }
 
-export default RandomJoke
+export default GitHubUser
