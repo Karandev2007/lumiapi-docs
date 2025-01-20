@@ -1,0 +1,11 @@
+@import 'flowbite/dist/flowbite.min.css';
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: white;
+}
