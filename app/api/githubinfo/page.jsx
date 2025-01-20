@@ -16,7 +16,7 @@ const GitHubUser = () => {
 
       {/* api info header */}
       <h2 className="text-3xl font-semibold mb-4">GitHub User Information API</h2>
-      <p className="text-lg mb-4">fetch user data from github with just a username!</p>
+      <p className="text-lg mb-4">Fetch user data from github with just a username!</p>
 
       {/* api endpoint description */}
       <h3 className="text-xl font-medium mb-2">endpoint:</h3>

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Translation = () => {
+const RandomJoke = () => {
   return (
     <div className="max-w-7xl mx-auto p-8 bg-gray-900 text-white">
       {/* back button to home */}
@@ -15,30 +15,28 @@ const Translation = () => {
       <br /><br />
 
       {/* api info header */}
-      <h2 className="text-3xl font-semibold mb-4">Translation API</h2>
-      <p className="text-lg mb-4">Translate text into any language.</p>
+      <h2 className="text-3xl font-semibold mb-4">Random Joke API</h2>
+      <p className="text-lg mb-4">Fetch a random joke.</p>
       
       {/* api endpoint description */}
       <h3 className="text-xl font-medium mb-2">endpoint:</h3>
-      <pre className="bg-gray-800 p-4 rounded-lg">POST /v1/translate</pre>
+      <pre className="bg-gray-800 p-4 rounded-lg">GET /v1/joke</pre>
 
       <h3 className="text-xl font-medium mt-4 mb-2">example request url:</h3>
-      <pre className="bg-gray-800 p-4 rounded-lg">https://api.qeintech.in/v1/translate</pre>
+      <pre className="bg-gray-800 p-4 rounded-lg">https://api.qeintech.in/v1/joke</pre>
 
       {/* json response format */}
       <h3 className="text-xl font-medium mt-4 mb-2">response (json):</h3>
       <pre className="bg-gray-800 p-4 rounded-lg">
 {`{
-  "success": true,
-  "text": "hello",
-  "translation": "नमस्ते",
-  "language": "hi",
-  "response_time": "1418ms"
+  "category": "joke",
+  "joke": "I told my wife she was getting too emotional, so she threw a cup of tea at me. It was steeped in emotion",
+  "response_time": "1ms"
 }`}
       </pre>
 
-      {/* footer section with copyright and credits */}
-      <footer className="bg-gray-900 text-white py-6">
+            {/* footer section with copyright and credits */}
+            <footer className="bg-gray-900 text-white py-6">
         <div className="container mx-auto text-center">
           <p className="text-sm">
             © 2025 Qein Tech. all rights reserved.
@@ -55,4 +53,4 @@ const Translation = () => {
   )
 }
 
-export default Translation
+export default RandomJoke

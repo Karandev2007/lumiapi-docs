@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Translation = () => {
+const RandomQuote = () => {
   return (
     <div className="max-w-7xl mx-auto p-8 bg-gray-900 text-white">
       {/* back button to home */}
@@ -15,25 +15,23 @@ const Translation = () => {
       <br /><br />
 
       {/* api info header */}
-      <h2 className="text-3xl font-semibold mb-4">Translation API</h2>
-      <p className="text-lg mb-4">Translate text into any language.</p>
+      <h2 className="text-3xl font-semibold mb-4">Random Quote API</h2>
+      <p className="text-lg mb-4">Get a random inspirational or motivative quote.</p>
       
       {/* api endpoint description */}
       <h3 className="text-xl font-medium mb-2">endpoint:</h3>
-      <pre className="bg-gray-800 p-4 rounded-lg">POST /v1/translate</pre>
+      <pre className="bg-gray-800 p-4 rounded-lg">GET /v1/quote</pre>
 
       <h3 className="text-xl font-medium mt-4 mb-2">example request url:</h3>
-      <pre className="bg-gray-800 p-4 rounded-lg">https://api.qeintech.in/v1/translate</pre>
+      <pre className="bg-gray-800 p-4 rounded-lg">https://api.qeintech.in/v1/quote</pre>
 
       {/* json response format */}
       <h3 className="text-xl font-medium mt-4 mb-2">response (json):</h3>
       <pre className="bg-gray-800 p-4 rounded-lg">
 {`{
-  "success": true,
-  "text": "hello",
-  "translation": "नमस्ते",
-  "language": "hi",
-  "response_time": "1418ms"
+  "category": "quote",
+  "quote": "Don’t worry if plan A doesn’t work. There are 25 more letters in the alphabet.",
+  "response_time": "1ms"
 }`}
       </pre>
 
@@ -55,4 +53,4 @@ const Translation = () => {
   )
 }
 
-export default Translation
+export default RandomQuote

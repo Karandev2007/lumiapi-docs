@@ -16,7 +16,7 @@ const TextToSpeech = () => {
 
       {/* api info header */}
       <h2 className="text-3xl font-semibold mb-4">Text-to-Speech API</h2>
-      <p className="text-lg mb-4">convert text into speech and get the audio file.</p>
+      <p className="text-lg mb-4">Convert text into speech.</p>
 
       <h3 className="text-xl font-medium mb-2">endpoint:</h3>
       <pre className="bg-gray-800 p-4 rounded-lg">POST /v1/text2speech</pre>

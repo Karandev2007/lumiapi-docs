@@ -7,22 +7,52 @@ const apis = [
   {
     name: 'Text-to-Speech API',
     description: 'Convert Text into Speech.',
-    link: '/api/text2speech', // changed url for the detailed api page
+    link: '/api/text2speech',
   },
   {
     name: 'GitHub User Information API',
     description: 'Get GitHub user information',
-    link: '/api/githubinfo', // changed url for the detailed api page
+    link: '/api/githubinfo',
   },
   {
     name: 'Translation API',
     description: 'Translate text into any language.',
-    link: '/api/translate', // changed url for the detailed api page
+    link: '/api/translate',
+  },
+  {
+    name: 'Random Fact API',
+    description: 'Fetch a cool random fact.',
+    link: '/api/fact',
+  },
+  {
+    name: 'Random Quote API',
+    description: 'Fetch a random quote to get inspired.',
+    link: '/api/quote',
   },
   {
     name: 'Random Joke API',
     description: 'Fetch a random joke for fun.',
-    link: '/api/random-joke', // changed url for the detailed api page
+    link: '/api/joke',
+  },
+  {
+    name: 'Random Meme API',
+    description: 'Fetch a random meme for fun.',
+    link: '/api/meme',
+  },
+  {
+    name: 'Random Image API',
+    description: 'Fetch random images by category.',
+    link: '/api/image',
+  },
+  {
+    name: 'Dice Roll API',
+    description: 'Simulate a dice roll and get a random result.',
+    link: '/api/dice',
+  },
+  {
+    name: '8Ball Magic Ball API',
+    description: 'Get random answers to your questions.',
+    link: '/api/8ball',
   }
 ]
 
